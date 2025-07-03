@@ -1,16 +1,139 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>LiveLab 4 Demo</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9c900;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f9c900;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    .connect-button {
+      background-color: #002f6c;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .hero {
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-weight: 600;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.6;
+    }
+
+    .get-involved {
+      background-color: #7ca6c4;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 3px;
+      border-radius: 5px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+  <header>
+    <div class="logo">charity: water</div>
+    <nav>
+      <a href="#">TAKE ACTION</a>
+      <a href="#">GET TO KNOW US</a>
+    </nav>
+    <button class="connect-button">Connect</button>
+  </header>
 
+  <div class="hero">
+    <img src="https://via.placeholder.com/1200x400" alt="Hero Image Placeholder">
+  </div>
+
+  <div class="content">
+    <h2>Give Water, See Change.</h2>
+    <p>
+      At Charity: Water, we make it easy for anyone to take meaningful action by funding clean water projects that change lives.
+      With our real-time project tracking and powerful stories of impact, you can see exactly how their involvement creates
+      life-changing results, turning everyday activism into a global movement for clean water.
+    </p>
+    <a class="get-involved" href="#">GET INVOLVED</a>
+
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200" alt="Image 1">
+      <img src="https://via.placeholder.com/200" alt="Image 2">
+      <img src="https://via.placeholder.com/200" alt="Image 3">
+    </div>
+  </div>
+</body>
 </html>
+
+
